@@ -63,7 +63,7 @@ const Contact = () => {
           </h2>
           <p className="text-xl text-gray-300">Get in touch with me</p>
         </motion.div>
-        
+
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* Contact Info Card */}
           <motion.div
@@ -78,7 +78,7 @@ const Contact = () => {
               <p className="text-gray-300 mb-8 max-w-md">
                 I'm currently available for freelance work or full-time positions. If you have a project that you want to get started, think you need my help with something, or just want to say hello, then get in touch.
               </p>
-              
+
               <div className="space-y-6">
                 <div className="flex items-center gap-4">
                   <span className="bg-cyan-900/60 p-3 rounded-full flex items-center justify-center">
@@ -98,7 +98,7 @@ const Contact = () => {
                   <div>
                     <span className="block text-white font-semibold">Phone</span>
                     <a href="tel:+212643552164" className="text-cyan-300 hover:underline">
-                      +212 643552164
+                      +212 643-552-164
                     </a>
                   </div>
                 </div>
@@ -113,7 +113,7 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-            
+
             <div className="flex gap-4 mt-8">
               <motion.a
                 whileHover={{ scale: 1.15 }}
@@ -153,7 +153,7 @@ const Contact = () => {
                 value={formData.name}
                 onChange={handleChange}
                 required
-                className="bg-[#112240] text-white placeholder-gray-400 rounded-lg px-4 py-3 w-full focus:outline-none focus:ring-2 focus:ring-cyan-400 border border-gray-700"
+                className="bg-gray-800/50 text-white placeholder-gray-400 rounded-lg px-4 py-3 w-full focus:outline-none focus:ring-2 focus:ring-cyan-400 border border-gray-700"
               />
               <input
                 type="email"
@@ -162,7 +162,7 @@ const Contact = () => {
                 value={formData.email}
                 onChange={handleChange}
                 required
-                className="bg-[#112240] text-white placeholder-gray-400 rounded-lg px-4 py-3 w-full focus:outline-none focus:ring-2 focus:ring-cyan-400 border border-gray-700"
+                className="bg-gray-800/50 text-white placeholder-gray-400 rounded-lg px-4 py-3 w-full focus:outline-none focus:ring-2 focus:ring-cyan-400 border border-gray-700"
               />
             </div>
             <input
@@ -172,7 +172,7 @@ const Contact = () => {
               value={formData.subject}
               onChange={handleChange}
               required
-              className="bg-[#112240] text-white placeholder-gray-400 rounded-lg px-4 py-3 w-full focus:outline-none focus:ring-2 focus:ring-cyan-400 border border-gray-700"
+              className="bg-gray-800/50 text-white placeholder-gray-400 rounded-lg px-4 py-3 w-full focus:outline-none focus:ring-2 focus:ring-cyan-400 border border-gray-700"
             />
             <textarea
               name="message"
@@ -181,25 +181,24 @@ const Contact = () => {
               value={formData.message}
               onChange={handleChange}
               required
-              className="bg-[#112240] text-white placeholder-gray-400 rounded-lg px-4 py-3 w-full focus:outline-none focus:ring-2 focus:ring-cyan-400 border border-gray-700"
+              className="bg-gray-800/50 text-white placeholder-gray-400 rounded-lg px-4 py-3 w-full focus:outline-none focus:ring-2 focus:ring-cyan-400 border border-gray-700"
             ></textarea>
-            
+
             {status.error && (
               <div className="text-red-400 text-sm">{status.error}</div>
             )}
-            
+
             {status.submitted && (
               <div className="text-green-400 text-sm">Message sent successfully!</div>
             )}
-            
+
             <motion.button
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.98 }}
               type="submit"
               disabled={status.submitting}
-              className={`w-full bg-gradient-to-r from-blue-600 to-cyan-400 text-white text-lg font-bold py-4 rounded-lg shadow-lg hover:from-cyan-500 hover:to-blue-600 transition-all duration-200 ${
-                status.submitting ? 'opacity-50 cursor-not-allowed' : ''
-              }`}
+              className={`w-full bg-gradient-to-r from-blue-600 to-cyan-400 text-white text-lg font-bold py-4 rounded-lg shadow-lg hover:from-cyan-500 hover:to-blue-600 transition-all duration-200 ${status.submitting ? 'opacity-50 cursor-not-allowed' : ''
+                }`}
             >
               {status.submitting ? 'Sending...' : 'Send Message'}
             </motion.button>

@@ -66,10 +66,10 @@ const Navbar = () => {
           >
             <a
               href="#home"
-              className="px-4 py-2 rounded-lg text-2xl font-bold text-white bg-gradient-to-r from-blue-600 to-cyan-400 shadow-none transition-all duration-200 hover:shadow-lg hover:from-cyan-400 hover:to-blue-600 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:ring-offset-2"
+              className="text-2xl font-bold text-white hover:text-cyan-400 transition-colors duration-200"
               onClick={() => handleNavClick('#home')}
             >
-              Portfolio
+              Siham<span className="text-cyan-400">.</span>
             </a>
           </motion.div>
 
@@ -87,8 +87,10 @@ const Navbar = () => {
                     e.preventDefault();
                     handleNavClick(item.href);
                   }}
-                  className="relative px-4 py-2 rounded-lg text-base font-semibold text-white bg-gradient-to-r from-blue-600 to-cyan-400 shadow-none transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-cyan-400 focus:ring-offset-2 hover:shadow-lg hover:from-cyan-400 hover:to-blue-600 hover:scale-105"
-                  style={{ margin: '0 0.25rem' }}
+                  className={`text-sm font-medium transition-colors duration-200 ${item.name === 'Contact'
+                      ? 'px-4 py-2 rounded border border-cyan-400 text-cyan-400 hover:bg-cyan-400/10'
+                      : 'text-gray-300 hover:text-cyan-400'
+                    }`}
                 >
                   {item.name}
                 </motion.a>
@@ -96,10 +98,10 @@ const Navbar = () => {
               {/* Dark mode toggle */}
               <button
                 onClick={() => setDarkMode(!darkMode)}
-                className="ml-4 p-2 rounded-full bg-gray-800 hover:bg-cyan-500 text-white transition-colors duration-200 shadow focus:outline-none focus:ring-2 focus:ring-cyan-400"
+                className="ml-4 text-gray-400 hover:text-cyan-400 transition-colors duration-200 focus:outline-none"
                 aria-label="Toggle dark mode"
               >
-                {darkMode ? <FaSun className="text-yellow-300" /> : <FaMoon className="text-cyan-300" />}
+                {darkMode ? <FaSun className="text-xl" /> : <FaMoon className="text-xl" />}
               </button>
             </div>
           </div>

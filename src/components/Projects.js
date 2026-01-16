@@ -4,48 +4,48 @@ import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 
 const projects = [
   {
-    title: 'MediConnect',
-    description: 'MediConnect is a user-friendly web platform that simplifies communication between patients and doctors. It allows patients to book appointments and manage their health info, while doctors can organize their schedules and follow up with patients easily. The app aims to make healthcare more accessible and efficient for everyone.',
-    image: 'https://badgut.org/wp-content/uploads/Image-Content-what-doctors-want.png',
-    link: 'https://github.com/SihamNafie24/MediConnect-main-1-.git',
+    title: 'Novi - AI Learning Platform',
+    description: 'A full-stack EdTech application that transforms static PDF documents into interactive lessons using AI. Features secure JWT authentication, real-time quiz generation, and a seamless responsive UI.',
+    image: 'https://images.unsplash.com/photo-1501504905252-473c47e087f8?auto=format&fit=crop&w=600&q=80',
+    link: 'https://github.com/SihamNafie24/ai-learning-platform',
     live: '',
-    tech: ['Laravel', 'PHP', 'Blade', 'JavaScript', 'CSS', 'SCSS'],
+    tech: ['React', 'TypeScript', 'Django', 'Python', 'OpenAI API'],
   },
   {
-    title: 'Login Dashboard',
-    description: `login_Dash is a Laravel-based authentication system featuring a modern login interface and a user-friendly dashboard. It's designed to help developers kickstart web applications with secure login mechanisms and elegant Blade templates.`,
-    image: 'https://t4.ftcdn.net/jpg/02/70/23/67/360_F_270236770_C2sB7zP7AJx0ivHr5KUl2a46yMkqTTAW.jpg',
-    link: 'https://github.com/SihamNafie24/login_Dash.git',
+    title: 'GetHome Store',
+    description: 'A modern e-commerce platform offering a seamless shopping experience. Includes advanced product filtering, dynamic cart management, real-time search, and a mobile-first design.',
+    image: 'https://images.unsplash.com/photo-1556228453-efd6c1ff04f6?auto=format&fit=crop&w=600&q=80',
+    link: 'https://github.com/SihamNafie24/GetHome',
     live: '',
-    tech: ['Laravel Framework', 'Blade Templating', 'PHP', 'Vue.js'],
+    tech: ['React', 'Vite', 'Tailwind CSS', 'Context API'],
   },
   {
-    title: 'Watson Website',
-    description: `WATSON is a Made in Morocco food service brand, created in 2020 by the MTC design office.`,
+    title: 'WATSON Professional',
+    description: 'A digital showcase for a premier Moroccan food service brand. Built to highlight commercial and domestic kitchen equipment with a focus on brand identity and responsive performance.',
     image: 'https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80',
     link: 'https://github.com/SihamNafie24/watson-website.git',
     live: '',
-    tech: ['React', 'Tailwind CSS', 'styled-components', 'react-router-dom', 'axios'],
+    tech: ['React', 'Styled-Components', 'Tailwind CSS'],
   },
   {
-    title: 'Hotel Royal Park',
-    description: `hotel-Rayal-Park is a modern, responsive, and visually stunning landing page for a luxury hotel. Built with HTML, CSS, and JavaScript, this project showcases elegant design, smooth user experience, and premium features for a high-end hospitality brand.`,
-    image: 'https://cf.bstatic.com/xdata/images/hotel/max1024x768/163516837.jpg?k=dca29fce858176884185456c4edbca347de13f1f7d6ba3282969311825b1d157&o=&hp=1',
-    link: 'https://github.com/SihamNafie24/hotel-Rayal-Park.git',
+    title: 'MediConnect Health',
+    description: 'A streamlined healthcare management application designed to simplify doctor-patient interactions. Features a secure appointment booking system, dynamic schedule management for doctors, and a robust database for medical records.',
+    image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=600&q=80',
+    link: 'https://github.com/SihamNafie24/MediConnect-main-1-.git',
     live: '',
-    tech: ['HTML5', 'CSS3', 'JavaScript'],
+    tech: ['Laravel', 'PHP 8.2', 'MySQL', 'Tailwind CSS'],
   },
   {
-    title: 'E-commerce Website',
-    description: `A modern, responsive e-commerce website built with React, featuring a beautiful UI, secure checkout process, and user-friendly features.`,
-    image: 'https://www.lopinion.ma/photo/art/grande/87622106-62135471.jpg?v=1743593195',
-    link: 'https://github.com/SihamNafie24/E-commerce-Website.git',
+    title: 'GetJobs',
+    description: 'A full-stack job board application allowing companies to post jobs and candidates to apply. Features include user authentication, profile management, and application tracking.',
+    image: 'https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=600&q=80',
+    link: '#',
     live: '',
-    tech: ['React.js', 'Redux Toolkit', 'React Router', 'Tailwind CSS', 'React Icons', 'React Hot Toast'],
+    tech: ['React', 'Laravel', 'MySQL', 'MongoDB', 'Tailwind CSS'],
   },
   {
     title: 'SHMSTORE',
-    description: `SHMSTORE is a modern e-commerce web application focused on tech and gaming products. Built with React, Vite, and Tailwind CSS, it offers a sleek, responsive, and user-friendly experience for both customers and sellers.`,
+    description: 'SHMSTORE is a modern e-commerce web application focused on tech and gaming products. Built with React, Vite, and Tailwind CSS, it offers a sleek, responsive, and user-friendly experience for both customers and sellers.',
     image: 'https://www.ncsc.gov.uk/images/library/iStock-1334436084.jpg',
     link: 'https://github.com/SihamNafie24/SHMSTORE.git',
     live: '',
@@ -84,9 +84,12 @@ const Projects = () => {
               <div className="p-6 flex flex-col flex-1">
                 <h3 className="text-2xl font-bold text-cyan-300 mb-2">{project.title}</h3>
                 <p className="text-gray-300 mb-4 flex-1">{project.description}</p>
-                <div className="flex flex-wrap gap-2 mb-2">
+                <div className="flex flex-wrap gap-2 mt-auto">
                   {project.tech.map((tech, i) => (
-                    <span key={i} className="px-3 py-1 text-xs font-semibold bg-cyan-900 text-cyan-200 rounded-full">
+                    <span
+                      key={i}
+                      className="px-3 py-1 text-xs font-medium text-cyan-300 bg-cyan-900/30 rounded-full border border-cyan-800"
+                    >
                       {tech}
                     </span>
                   ))}

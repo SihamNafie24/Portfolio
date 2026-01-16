@@ -5,64 +5,25 @@ import { FaBriefcase, FaGraduationCap, FaCode, FaUsers, FaArrowRight } from 'rea
 const About = () => {
   const experiences = [
     {
-      title: "GetJobs - Full-Stack Web App",
-      company: "Projet de fin d'études",
-      period: "2023 - 2024",
-      description: "Application web full stack permettant aux entreprises de publier des offres d'emploi et aux utilisateurs de postuler facilement.",
-      highlights: [
-        "Développement frontend avec React",
-        "Backend avec Laravel",
-        "Bases de données MySQL et MongoDB",
-        "Interface utilisateur intuitive et responsive"
-      ]
+      title: "Full Stack Web Developer Intern",
+      company: "HB DEVELOPMENT | Tétouan (Hybrid)",
+      period: "Oct 2025 - Present",
+      description: "Collaborating on the development of full-stack web solutions using modern frameworks. Contributing to frontend interface design and backend logic implementation.",
+      tech: ["React", "Laravel", "Node.js", "MySQL"]
     },
     {
-      title: "Application de Recherche de Voyages",
-      company: "Projet Personnel",
-      period: "2023",
-      description: "Application web de recherche des voyages en autobus et gestion des abonnements.",
-      highlights: [
-        "Développement avec Laravel",
-        "Interface utilisateur avec JQuery et Bootstrap",
-        "Système de recherche et filtrage",
-        "Gestion des réservations et abonnements"
-      ]
+      title: "Freelance Full Stack Developer",
+      company: "Self-Employed | Remote",
+      period: "Nov 2024 - Sep 2025",
+      description: "Delivered custom web applications for clients using Laravel and React.js. Developed responsive WordPress themes and plugins to meet specific client needs. Managed full project lifecycles from requirement gathering to deployment.",
+      tech: ["Laravel", "React.js", "WordPress", "PHP"]
     },
     {
-      title: "Système de Gestion Bancaire",
-      company: "Projet Académique",
-      period: "2023",
-      description: "Système de gestion des transactions bancaires avec interface moderne.",
-      highlights: [
-        "Développement backend avec Java/JEE",
-        "Interface utilisateur React",
-        "Intégration JQuery et Bootstrap",
-        "Gestion sécurisée des transactions"
-      ]
-    },
-    {
-      title: "Développement Web",
-      company: "Projets Divers",
-      period: "2022 - 2023",
-      description: "Programmation de sites web dynamiques avec diverses technologies.",
-      highlights: [
-        "Développement full-stack avec HTML, CSS, PHP",
-        "Bases de données MySQL",
-        "JavaScript et Python",
-        "Intégration Bootstrap pour le design responsive"
-      ]
-    },
-    {
-      title: "Plateforme Web Multimédia",
-      company: "Projet Personnel",
-      period: "2022",
-      description: "Création d'une plateforme web de contenu multimédia dynamique.",
-      highlights: [
-        "Backend avec Java Spring Boot",
-        "Intégration de l'API Pixabay",
-        "Interface utilisateur moderne",
-        "Gestion de contenu multimédia"
-      ]
+      title: "Full Stack Web Developer Intern",
+      company: "Oubaba S.A.R.L. | El Jadida (Hybrid)",
+      period: "Apr 2024 - May 2024",
+      description: "Assisted in the maintenance and development of internal web tools. Gained hands-on experience in a professional agile environment.",
+      tech: ["HTML/CSS", "PHP", "JavaScript", "MySQL"]
     }
   ];
 
@@ -120,19 +81,23 @@ const About = () => {
           className="text-center mb-16"
         >
           <h2 className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300 mb-6">About Me</h2>
-          <div className="flex flex-col md:flex-row items-center justify-center gap-10 mt-8">
-            {/* Enhanced Horizontal Intro Paragraph */}
-            <div className="flex-1 text-left">
-              <div className="bg-gray-800/50 backdrop-blur-sm p-8 rounded-2xl border border-gray-700/50">
-                <p className="text-gray-300 text-lg leading-relaxed">
-                  I'm a passionate full-stack developer with a strong foundation in web development and a keen eye for creating elegant, user-friendly applications. My journey in tech has been driven by a constant desire to learn and innovate.
-                </p>
-                <p className="text-gray-300 text-lg leading-relaxed mt-4">
-                  I'm always excited to take on new challenges, collaborate with others, and contribute to projects that make a real impact. <span className="text-cyan-400 font-bold">Let's build something amazing together!</span>
-                </p>
-                <div className="flex justify-start">
-                  <a href="#contact" className="inline-block bg-gradient-to-r from-blue-600 to-cyan-500 text-white px-6 py-2 rounded-full font-semibold shadow-lg hover:from-cyan-500 hover:to-blue-600 transition-all duration-300">Contact Me</a>
-                </div>
+
+          <div className="max-w-3xl mx-auto">
+            <div className="bg-gray-800/50 backdrop-blur-sm p-8 rounded-2xl border border-gray-700/50 text-center">
+              <p className="text-gray-300 text-lg leading-relaxed mb-6 max-w-2xl mx-auto">
+                I am a Full Stack Developer specialized in building robust web applications using <span className="text-cyan-400 font-semibold">React.js, Node.js, and Laravel</span>.
+              </p>
+              <p className="text-gray-300 text-lg leading-relaxed mb-8 max-w-2xl mx-auto">
+                With a background in Scientific Research, I bring an analytical approach to coding—treating every bug like a hypothesis to be tested and every project like a complex system to be optimized.
+              </p>
+
+              <div className="flex justify-center">
+                <a
+                  href="#projects"
+                  className="inline-flex items-center px-8 py-3 bg-gradient-to-r from-blue-600 to-cyan-500 text-white font-semibold rounded-full shadow-lg hover:from-cyan-500 hover:to-blue-600 transition-all duration-300 transform hover:scale-105"
+                >
+                  View My Work
+                </a>
               </div>
             </div>
           </div>
@@ -163,24 +128,25 @@ const About = () => {
                   viewport={{ once: true }}
                   className="bg-gray-800 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 border border-gray-700/50"
                 >
-                  <div className="flex justify-between items-start mb-4">
-                    <div>
-                      <h4 className="text-xl font-bold text-white">{exp.title}</h4>
-                      <p className="text-cyan-400 font-medium">{exp.company}</p>
+                  <div className="mb-4">
+                    <h4 className="text-xl font-bold text-white">{exp.title}</h4>
+                    <div className="flex justify-between items-center mt-2 flex-wrap gap-2">
+                      <span className="text-cyan-400 font-medium">{exp.company}</span>
+                      <span className="px-3 py-1 bg-gray-700 text-cyan-300 rounded-full text-sm">
+                        {exp.period}
+                      </span>
                     </div>
-                    <span className="px-3 py-1 bg-gray-700 text-cyan-300 rounded-full text-sm">
-                      {exp.period}
-                    </span>
                   </div>
-                  <p className="text-gray-300 mb-4">{exp.description}</p>
-                  <ul className="space-y-2">
-                    {exp.highlights.map((highlight, i) => (
-                      <li key={i} className="flex items-start text-gray-300">
-                        <FaArrowRight className="text-cyan-400 mt-1 mr-2 flex-shrink-0" />
-                        <span>{highlight}</span>
-                      </li>
+                  <p className="text-gray-300 mb-6 leading-relaxed">{exp.description}</p>
+
+                  {/* Badge System */}
+                  <div className="flex flex-wrap gap-2">
+                    {exp.tech.map((tech, i) => (
+                      <span key={i} className="px-3 py-1 text-xs font-semibold bg-cyan-900/50 text-cyan-200 border border-cyan-700/50 rounded-full">
+                        {tech}
+                      </span>
                     ))}
-                  </ul>
+                  </div>
                 </motion.div>
               ))}
             </div>
