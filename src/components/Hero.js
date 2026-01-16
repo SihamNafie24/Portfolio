@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { TypeAnimation } from 'react-type-animation';
-import { FaLinkedin, FaGithub, FaEnvelope, FaPhone, FaArrowRight } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaArrowRight } from 'react-icons/fa';
 
 const Hero = () => {
   return (

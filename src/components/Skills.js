@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGitAlt, FaPython, FaPhp, FaLaravel } from 'react-icons/fa';
+import { FaHtml5, FaCss3Alt, FaReact, FaNodeJs, FaGitAlt, FaPython, FaPhp, FaLaravel } from 'react-icons/fa';
 import { SiTypescript, SiTailwindcss, SiMongodb, SiMysql, SiFigma, SiDocker, SiAmazonaws, SiNextdotjs, SiDjango } from 'react-icons/si';
 
 const skillCategories = [

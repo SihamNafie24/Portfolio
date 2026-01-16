@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaBriefcase, FaGraduationCap, FaCode, FaUsers, FaArrowRight } from 'react-icons/fa';
+import { FaBriefcase, FaGraduationCap, FaArrowRight } from 'react-icons/fa';
 
 const About = () => {
   const experiences = [
@@ -66,9 +66,7 @@ const About = () => {
     }
   ];
 
-  const skills = [
-    // Technical Skills data removed and will be moved to Skills.js
-  ];
+
 
   return (
     <section id="about" className="py-20 bg-gradient-to-b from-[#0a192f] to-[#0d2544] min-h-screen">
