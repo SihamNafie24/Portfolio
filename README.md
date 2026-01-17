@@ -1,17 +1,5 @@
 # Portfolio Website
 
-A modern, responsive portfolio website built with React and Tailwind CSS.
-
-## Features
-
-- Responsive design
-- Modern UI/UX
-- Smooth animations
-- Contact form
-- Project showcase
-- Skills section
-- About section
-
 ## Technologies Used
 
 - React.js
